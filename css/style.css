@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Bukhari Script";
+    src: url("fonts/BukhariScript-Regular.ttf")
+}
+
+.display-4 {
+    font-family: 'Bukhari Script', Arial, sans-serif;
+}
+
+.jumbotron {
+    background-color: #FF5E5F;
+    color: white;
+}
