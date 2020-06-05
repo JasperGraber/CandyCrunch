@@ -8,7 +8,8 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/img/logo.png">
 
   <title>CandyCrunch.nl</title>
 </head>
@@ -16,6 +17,11 @@
 <body>
   <main>
     <section class="container-fluid px-0">
+      <div class="row">
+        <div class="col-12"><?php include("./banner.php"); ?></div>
+      </div>
+    </section>
+    <section class="container-fluid px-0 sticky-top">
       <div class="row">
         <div class="col-12"><?php include("./navbar.php"); ?></div>
       </div>

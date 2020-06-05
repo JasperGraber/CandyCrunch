@@ -1,13 +1,51 @@
 @font-face {
-    font-family: "Bukhari Script";
-    src: url("fonts/BukhariScript-Regular.ttf")
+    font-family: 'bukhari script';
+    src: url('/fonts/bukhariscript-regular-webfont.woff2') format('woff2'), url('/fonts/bukhariscript-regular-webfont.woff') format('woff');
 }
 
-.display-4 {
-    font-family: 'Bukhari Script', Arial, sans-serif;
+@font-face {
+    font-family: 'roundo';
+    src: url('/fonts/roundo-regular-webfont.woff2') format('woff2'), url('/fonts/roundo-regular-webfont.woff') format('woff');
 }
 
-.jumbotron {
-    background-color: #FF5E5F;
+.banner {
+    background-color: #ffcccd;
+    text-align: center;
+}
+
+.navbar {
+    position: sticky;
+    font-size: 25px;
+    font-family: 'roundo', calibri, sans-serif;
+    font-weight: bold;
+    background-color: white;
+    border: 3px solid #ff5758;
+    padding: auto;
+}
+
+.navbar a {
+    color: #ff5758;
+}
+
+.navbar a:hover {
+    color: #ffcccd;
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.icon {
+    background-image: url("/img/cart.png");
+    background-repeat: no-repeat;
+}
+
+.icon:hover {
+    background-image: url("/img/cart2.png");
+}
+
+.navbar .home {
+    font-family: 'bukhari script', calibri, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
     color: white;
+    text-shadow: -2px -2px 0 #ff5758, 2px -2px 0 #ff5758, 2px 2px 0 #ff5758, -2px 2px 0 #ff5758;
 }
