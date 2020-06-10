@@ -17,7 +17,6 @@
     position: sticky;
     font-size: 25px;
     font-family: 'roundo', calibri, sans-serif;
-    font-weight: bold;
     background-color: white;
     border: 3px solid #ff5758;
     padding: auto;
@@ -48,4 +47,15 @@
     font-size: 40px;
     color: white;
     text-shadow: -2px -2px 0 #ff5758, 2px -2px 0 #ff5758, 2px 2px 0 #ff5758, -2px 2px 0 #ff5758;
+}
+
+.footer {
+    background-color: #ff5758;
+    padding: 100px;
+    color: white;
+    font-family: 'roundo', calibri, sans-serif;
+}
+
+.footer p {
+    line-height: 0px;
 }
