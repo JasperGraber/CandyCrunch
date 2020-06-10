@@ -49,6 +49,12 @@
     text-shadow: -2px -2px 0 #ff5758, 2px -2px 0 #ff5758, 2px 2px 0 #ff5758, -2px 2px 0 #ff5758;
 }
 
+.dropdown-menu {
+    font-family: 'roundo', calibri, sans-serif;
+    border: 3px solid #ff5758;
+    text-decoration: none;
+}
+
 .footer {
     background-color: #ff5758;
     padding: 100px;
@@ -58,4 +64,11 @@
 
 .footer p {
     line-height: 0px;
+}
+
+.jumbotron {
+    background-color: white;
+    color: #ff5758;
+    text-align: center;
+    padding: 50px;
 }
