@@ -15,15 +15,17 @@
 
 .navbar {
     position: sticky;
-    font-size: 25px;
-    font-family: 'roundo', calibri, sans-serif;
     background-color: white;
-    border: 3px solid #ff5758;
+    border-top: 3px solid #ff5758;
+    border-bottom: 3px solid #ff5758;
     padding: auto;
 }
 
 .navbar a {
     color: #ff5758;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'roundo', calibri, sans-serif;
 }
 
 .navbar a:hover {
@@ -59,6 +61,7 @@
     background-color: #ff5758;
     padding: 100px;
     color: white;
+    border-top: 7px solid #ffcccd;
     font-family: 'roundo', calibri, sans-serif;
 }
 
@@ -67,8 +70,15 @@
 }
 
 .jumbotron {
+    margin-top: 75px;
     background-color: white;
     color: #ff5758;
+    font-weight: bolder;
+    font-family: 'roundo', calibri, sans-serif;
     text-align: center;
     padding: 50px;
+}
+
+.col-6 {
+    margin-bottom: 30px;
 }
