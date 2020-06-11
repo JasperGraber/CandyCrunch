@@ -37,6 +37,8 @@
 .icon {
     background-image: url("/img/cart.png");
     background-repeat: no-repeat;
+    width: 40px;
+    margin-top: 10px;
 }
 
 .icon:hover {
@@ -61,7 +63,7 @@
     background-color: #ff5758;
     padding: 100px;
     color: white;
-    border-top: 7px solid #ffcccd;
+    border-top: 8px solid #ffcccd;
     font-family: 'roundo', calibri, sans-serif;
 }
 

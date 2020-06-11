@@ -26,7 +26,9 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <a class="nav-link icon" href="./index.php?content=cart"></a>
+        
+          <a class="nav-link icon" href="./index.php?content=cart"></a>
+        
         <li class="nav-item">
           <a class="nav-link" href="./index.php?content=login">Inloggen</a>
         </li>
