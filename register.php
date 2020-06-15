@@ -29,6 +29,7 @@
                 <div class="form-group">
                     <label for="exampleInputPassword1">Wachtwoord</label>
                     <input name="password" type="password" class="form-control" id="InputPassword1" aria-describedby="passwordHelp">
+                    <small id="passwordHelpBlock" class="form-text text-muted">Wij versturen u een verificatie e-mail.</small>
                 </div>
                 <button type="submit" class="btn btn-primary btn-block btn-lg">Registreer</button>
             </form>
