@@ -36,7 +36,7 @@ if (empty($email) || empty($password)) {
 
             switch ($record["userrole"]) {
                 case 'user':
-                    header("Location: ./index.php?content=u-home");
+                    header("Location: ./index.php?content=user/u-home");
                     break;
                 default:
                     header("Location: ./index.php?content=home");
