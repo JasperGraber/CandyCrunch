@@ -15,8 +15,8 @@
             BMI
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="./index.php?content=jasper">Jasper</a>
-            <a class="dropdown-item" href="./index.php?content=christian">Christian</a>
+            <a class="dropdown-item" href="./index.php?content=jasper/bmi">Jasper</a>
+            <a class="dropdown-item" href="./index.php?content=christian/">Christian</a>
           </div>
         </li>
       </ul>
