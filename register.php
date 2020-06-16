@@ -14,7 +14,7 @@
                         <input name="firstname" type="firstname" class="form-control" id="InputFirstname1" aria-describedby="firstnameHelp">
                     </div>
                     <div class="form-group col-md-3">
-                        <label for="exampleInputInfix1">Voorzetsel(s)</label>
+                        <label for="exampleInputInfix1">Tussenvoegsel(s)</label>
                         <input name="infix" type="infix" class="form-control" id="InputInfix1" aria-describedby="infixHelp">
                     </div>
                     <div class="form-group">
