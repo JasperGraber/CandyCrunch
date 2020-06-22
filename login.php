@@ -25,7 +25,7 @@
                 <h6>Nog geen account? <a href="./index.php?content=register">Registreer</a>.</h6>
         </div>
         <div class="col-6">
-                <h6> Door in te loggen accepteer je de <a href="#">algemene voorwaarden</a>.</6>
+                <h6>Door in te loggen accepteer je de <a href="#">algemene voorwaarden</a>.</6>
         </div>
     </div>
 </div>

@@ -96,3 +96,15 @@
 .col-6 {
     margin-bottom: 30px;
 }
+
+.brandname {
+    font-family: 'bukhari script', calibri, sans-serif;
+    font-weight: normal;
+    font-size: 40px;
+    color: white;
+    text-shadow: -2px -2px 0 #ff5758, 2px -2px 0 #ff5758, 2px 2px 0 #ff5758, -2px 2px 0 #ff5758;
+}
+
+.home {
+    text-align: left;
+}
