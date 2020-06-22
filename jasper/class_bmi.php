@@ -264,8 +264,3 @@ class bmi
 
 // Input via POST array
 $bmi = new bmi;
-$bmi->weight = $_POST["weight"];
-$bmi->height = $_POST["height"];
-$bmi->age = $_POST["age"];
-
-echo $bmi->calculate();

@@ -33,6 +33,10 @@ if (empty($email) || empty($password)) {
             $_SESSION["id"] = $record["customer_id"];
             $_SESSION["userrole"] = $record["userrole"];
             $_SESSION["email"] = $record["email"];
+            $_SESSION["bmi"] = $record["bmi"];
+            $_SESSION["age"] = $record["age"];
+            $_SESSION["height"] = $record["height"];
+            $_SESSION["weight"] = $record["weight"];
 
             switch ($record["userrole"]) {
                 case 'user':

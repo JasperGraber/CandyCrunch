@@ -1,3 +1,5 @@
+   <?php include('class_bmi.php'); ?>
+
    <!-- Jumbotron -->
    <div class="container">
      <div class="jumbotron jumbotron-fluid">
@@ -13,17 +15,17 @@
      <!-- Formulier -->
      <div class="row">
        <div class="col-6">
-         <form method="post">
+         <form method="post" action="./index.php?content=jasper/bmi">
            <div class="form-group">
              <label for="exampleInputAge1">Leeftijd</label>
              <input name="age" type="age" class="form-control" id="InputAge1" aria-describedby="ageHelp">
            </div>
            <div class="form-group">
-             <label for="exampleInputHeight1">Lengte</label>
-             <input name="height" type="height" class="form-control" id="InputHeight1" aria-describedby="heightHelp">
+             <label for="exampleInputHeight1">Lengte (cm)</label>
+             <input name="height" type="text" class="form-control" id="InputHeight1" aria-describedby="heightHelp">
            </div>
            <div class="form-group">
-             <label for="exampleInputWeight1">Gewicht</label>
+             <label for="exampleInputWeight1">Gewicht (kg)</label>
              <input name="weight" type="weight" class="form-control" id="InputWeight1" aria-describedby="weightHelp">
            </div>
            <button type="submit" class="btn btn-primary btn-block btn-lg">Bereken!</button>
@@ -33,8 +35,13 @@
        <!-- Resultaat -->
        <div class="col-6 result">
          <?php
-          // Include script
-          include('script.php');
+          if (!empty($_POST)) {
+            $bmi->weight = $_POST["weight"];
+            $bmi->height = $_POST["height"];
+            $bmi->age = $_POST["age"];
+
+            echo $bmi->calculate();
+          }
           ?>
        </div>
      </div>
