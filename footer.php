@@ -7,10 +7,13 @@
             <p>E-mail: contact.candycrunch@gmail.com</p>
         </div>
         <div class="col-3">
-            2
+        <h5>Snelle links</h5><br />
+            <p><a href="./index.php?content=shop">Winkel</a></p>
+            <p><a href="./index.php?content=company">Over ons</a></p>
         </div>
         <div class="col-3">
-            3
+            <iframe width="400" height="200" src="https://maps.google.com/maps?width=100&height=600&hl=nl&q=Lijnmarkt%2041%2C%203511%20KG%20Utrecht+(Candy%20Crunch)&ie=UTF8&t=&z=16&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
         </div>
     </div>
 </div>
