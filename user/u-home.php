@@ -16,8 +16,10 @@ is_authorized(["user"])
                 </div>
             </div>
         </div>
-        <div class="col-6">
-            
+        <div class="col-6 links">
+            <h1 margin-top:40px>Handige links:</h1>
+            <p><a href="./index.php?content=shop">Winkel</a></p>
+            <p><a href="./index.php?content=user/account">Account</a></p>
         </div>
     </div>
 </div>
