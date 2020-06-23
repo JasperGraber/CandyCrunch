@@ -5,9 +5,6 @@
         <a class="nav-link" href="./index.php?content=shop">Winkel</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./index.php?content=brands">Merken</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" href="./index.php?content=company">Over ons</a>
       </li>
       <li class="nav-item dropdown">
