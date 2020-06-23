@@ -1,6 +1,6 @@
 <?php
     // Verbinding maken met de database.
-    define("SERVERNAME", "localhost");
+    define("SERVERNAME", "localhost:3308");
     define("USERNAME", "root");
     define("PASSWORD", "");
     define("DATABASENAME", "candycrunch");
