@@ -82,6 +82,18 @@ switch($alert) {
         echo '<div class="alert alert-danger w-50 mx-auto mt-5 text-center" role="alert"> U bent niet goed ingelogd, u wordt doorgestuurd naar de login-pagina.</div>';
         header("Refresh: 3; url=./index.php?content=login");
     break;
+    case 'change-info':
+        echo '<div class="alert alert-success w-50 mx-auto mt-5 text-center" role="alert"> De wijzigingen zijn gelukt.</div>';
+        header("Refresh: 3; url=./index.php?content=user/account");
+    break;
+    case 'empty-info':
+        echo '<div class="alert alert-warning w-50 mx-auto mt-5 text-center" role="alert"> Voer alle gegevens in.</div>';
+        header("Refresh: 3; url=./index.php?content=user/account");
+    break;
+    case 'error-info':
+        echo '<div class="alert alert-danger w-50 mx-auto mt-5 text-center" role="alert"> Er is iets fout gegaan.</div>';
+        header("Refresh: 3; url=./index.php?content=user/account");
+    break;
     default:
     header("Location: ./index.php?content=home");
 break;
