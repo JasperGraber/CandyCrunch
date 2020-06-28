@@ -8,7 +8,7 @@
   </p>
 </div>
 
-<h2 style="text-align:center">ons Team</h2>
+<h2 style="text-align:center">Ons Team</h2>
 <div class="row">
   <div class="column">
     <div class="card">

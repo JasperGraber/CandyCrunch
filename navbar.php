@@ -18,10 +18,10 @@
           <?php
           if (isset($_SESSION["email"])) {
             echo '<a class="dropdown-item" href="./index.php?content=jasper/u-bmi">Jasper</a>';
-            echo '<a class="dropdown-item" href="./index.php?content=christian/">Christian</a>';
+            echo '<a class="dropdown-item" href="./index.php?content=christian/u-bmi_c">Christian</a>';
           } else {
             echo '<a class="dropdown-item" href="./index.php?content=jasper/bmi">Jasper</a>';
-            echo '<a class="dropdown-item" href="./index.php?content=christian/">Christian</a>';
+            echo '<a class="dropdown-item" href="./index.php?content=christian/bmi_c">Christian</a>';
           }
           ?>
         </div>
