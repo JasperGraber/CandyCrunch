@@ -1,3 +1,4 @@
+<!-- About. -->
 <div class="about-section">
   <h1>Over ons</h1>
   <p>Wij zijn een een snoepwinkel gevestigd in utrecht wij specializeren ons in amerikaanse lekkernijen.</p>
@@ -8,7 +9,14 @@
   </p>
 </div>
 
+<<<<<<< HEAD
 <h2 style="text-align:center">Ons Team</h2>
+=======
+<!-- Ons team. -->
+
+<!-- Jasper. -->
+<h2 style="text-align:center">ons Team</h2>
+>>>>>>> 9fb6431f775ff4e22df7a72e9ed69dede0133384
 <div class="row">
   <div class="column">
     <div class="card">
@@ -22,7 +30,7 @@
     </div>
   </div>
 
-
+<!-- Christian -->
   <div class="column">
     <div class="card">
       <img src="./img/elon.jpg" alt="elon" style="width:50%">
@@ -36,6 +44,7 @@
   </div>
 </div>
 
+<!-- Css. -->
 <style>
 
 body {

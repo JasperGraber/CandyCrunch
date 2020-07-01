@@ -1,4 +1,4 @@
-<?php include('class_bmi.php'); 
+<?php include('u-class_bmi.php'); 
 include("./connectDB.php"); ?>
 
 <!-- Jumbotron -->
@@ -16,7 +16,7 @@ include("./connectDB.php"); ?>
   <!-- Formulier -->
   <div class="row">
     <div class="col-6">
-      <form method="post" action="./index.php?content=jasper/bmi">
+      <form method="post" action="./index.php?content=jasper/u-bmi">
         <div class="form-group">
           <label for="exampleInputAge1">Leeftijd</label>
           <input name="age" type="text" class="form-control" id="InputAge1" aria-describedby="ageHelp">
@@ -40,18 +40,18 @@ include("./connectDB.php"); ?>
         $bmi->weight = $_POST["weight"];
         $bmi->height = $_POST["height"];
         $bmi->age = $_POST["age"];
-
-        echo $bmi->calculate();
+        
+        $bmi->calculate();
 
         $id = $_SESSION["id"];
-        $email = $_SESSION["email"];
 
         $sql = "UPDATE  `customer_information` 
-                                    SET     `bmi` = '$bmi', `age` = '$age', `height` = '$height', `weight` = '$weight'
-                                    WHERE   `customer_id` = '$id'
-                                    AND     `email` = '$email'";
+                                    SET     `bmi` = '$bmi->calculated_bmi', `age` = '$bmi->age', `height` = '$bmi->height', `weight` = '$bmi->weight'
+                                    WHERE   `customer_id` = '$id'";
 
+        // echo $sql; exit();
         mysqli_query($conn, $sql);
+
       }
       ?>
     </div>

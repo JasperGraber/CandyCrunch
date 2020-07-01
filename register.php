@@ -1,10 +1,13 @@
+<!-- Register page. -->
 <div class="container">
+    <!-- header. -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Registreer nu!</h1>
             <p class="lead">En maak bestellen nóg eenvoudiger.</p>
         </div>
     </div>
+    <!-- Register formulier. -->
     <div class="row">
         <div class="col-6">
             <form action="./index.php?content=registerScript" method="post">
@@ -31,12 +34,15 @@
                     <input name="password" type="password" class="form-control" id="InputPassword1" aria-describedby="passwordHelp">
                     <small id="passwordHelpBlock" class="form-text text-muted">Wij versturen u een verificatie e-mail.</small>
                 </div>
+                <!-- Button. -->
                 <button type="submit" class="btn btn-primary btn-block btn-lg">Registreer</button>
             </form>
         </div>
+        <!-- Login link. -->
         <div class="col-6">
             <h6>Al een account? <a href="./index.php?content=login">Login</a>.</h6>
         </div>
+        <!-- Privacy. -->
         <div class="col-6">
             <h6> Door te registeren accepteer je de <a href="#">algemene voorwaarden</a>.
         </div>

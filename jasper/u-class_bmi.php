@@ -1,10 +1,13 @@
 <?php
+
+
 class bmi
 {
     // Variabelen
     public $weight = 0;
     public $height = 0;
     public $age = 0;
+    public $calculated_bmi = 0;
 
 
     // Functie
@@ -21,6 +24,7 @@ class bmi
         } else {
             $bmi = $this->weight / ($this->height / 100 * $this->height / 100);
             $bmi = round($bmi, 2);
+            $this->calculated_bmi = $bmi;
 
             // Output BMI
             echo ("<h4>Je BMI is " . $bmi . ".</h4><br />");

@@ -16,21 +16,25 @@
 
 <body>
   <main>
+    <!-- Banner section. -->
     <section class="container-fluid px-0">
       <div class="row">
         <div class="col-12"><?php include("./banner.php"); ?></div>
       </div>
     </section>
+    <!-- Navbar section. -->
     <section class="container-fluid px-0 sticky-top">
       <div class="row">
         <div class="col-12"><?php include("./navbar.php"); ?></div>
       </div>
     </section>
+    <!-- Content section. -->
     <section class="container-fluid px-0">
       <div class="row">
         <div class="col-12"><?php include("./content.php"); ?></div>
       </div>
     </section>
+    <!-- Footer section. -->
     <section class="container-fluid px-0">
       <div class="row">
         <div class="col-12"><?php include("./footer.php"); ?></div>

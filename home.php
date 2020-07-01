@@ -1,5 +1,7 @@
+<!-- Home page. -->
 <div class="container">
     <div class="row">
+        <!-- Welkomst woord. -->
         <div class="col-7">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
@@ -9,6 +11,7 @@
                 </div>
             </div>
         </div>
+        <!-- Image. -->
         <div class="col-5">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">

@@ -30,17 +30,22 @@ if (empty($email) || empty($password)) {
             header("Location: ./index.php?content=message&alert=no-pw-match");
         } else {
             // Email wel actief, password match.
+            // Alles sessions in de record aangeven.
             $_SESSION["id"] = $record["customer_id"];
             $_SESSION["userrole"] = $record["userrole"];
             $_SESSION["email"] = $record["email"];
+            $_SESSION["password"] = $record["password"];
             $_SESSION["firstname"] = $record["firstname"];
             $_SESSION["infix"] = $record["infix"];
             $_SESSION["lastname"] = $record["lastname"];
+            $_SESSION["zipcode"] = $record["zipcode"];
+            $_SESSION["address"] = $record["address"];
             $_SESSION["bmi"] = $record["bmi"];
             $_SESSION["age"] = $record["age"];
             $_SESSION["height"] = $record["height"];
             $_SESSION["weight"] = $record["weight"];
 
+            // Switch userrole.
             switch ($record["userrole"]) {
                 case 'user':
                     header("Location: ./index.php?content=user/u-home");

@@ -1,10 +1,13 @@
+<!-- Login page. -->
 <div class="container">
+    <!-- Header. -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-4">Log in!</h1>
             <p class="lead">En maak bestellen nóg eenvoudiger.</p>
         </div>
     </div>
+    <!-- Login form. -->
     <div class="row">
         <div class="col-6">
             <form action="./index.php?content=loginScript" method="post">
@@ -18,12 +21,15 @@
                     <label for="exampleInputPassword1">Wachtwoord</label>
                     <input name="password" type="password" class="form-control" id="InputPassword1" aria-describedby="passwordHelp">
                 </div>
+                <!-- Button. -->
                 <button type="submit" class="btn btn-primary btn-block btn-lg">Login</button>
             </form>
         </div>
+        <!-- Registreer link. -->
         <div class="col-6">
                 <h6>Nog geen account? <a href="./index.php?content=register">Registreer</a>.</h6>
         </div>
+        <!-- Privacy. -->
         <div class="col-6">
                 <h6>Door in te loggen accepteer je de <a href="#">algemene voorwaarden</a>.</6>
         </div>

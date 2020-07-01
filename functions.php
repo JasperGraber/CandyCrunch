@@ -1,5 +1,5 @@
 <?php
-    // Een functie maken om een array schoon te maken.
+    // Functie om een array schoon te maken.
     function sanitize($raw_data) {
         global $conn;
         $data = htmlspecialchars($raw_data);
@@ -8,7 +8,7 @@
         return $data;
     }
 
-    // functie om te kijken of de gebruiker goed is ingelogd.
+    // Functie om te kijken of de gebruiker goed is ingelogd.
     function is_authorized($userrole) {
         if (!isset($_SESSION["email"])) {
             // Niet ingelogd.
@@ -17,6 +17,7 @@
             // Geen goede userrole.
             return header("Location: ./index.php?content=message&alert=auth-error-user");
         } else {
+            // Wel goed ingelogd.
             return true;
         }
     }
