@@ -41,7 +41,7 @@ include("./connectDB.php"); ?>
         $bmi->height = $_POST["height"];
         $bmi->age = $_POST["age"];
         
-       $bmi->calculate();
+        $bmi->calculate();
 
         $id = $_SESSION["id"];
 
