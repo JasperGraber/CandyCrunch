@@ -1,4 +1,5 @@
 <?php
+// Array's ophalen.
 $alert = (isset($_GET["alert"]))? $_GET["alert"]: "default";
 $id = (isset($_GET["id"]))? $_GET["id"]: "default";
 $pwh = (isset($_GET["pwh"]))? $_GET["pwh"]: "default";

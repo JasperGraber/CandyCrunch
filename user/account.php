@@ -1,6 +1,8 @@
+<!-- Account page. -->
 <div class="container accountpage">
     <div class="row">
         <div class="col-6">
+            <!-- Formulier.-->
             <form action="./index.php?content=user/accountScript" method="post">
                 <div class="form-row">
                     <div class="form-group">
@@ -29,9 +31,11 @@
                     <input name="email" type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
                     <small id="emailHelpBlock" class="form-text text-muted">Alle informatie invullen.</small>
                 </div>
+                <!-- Button. -->
                 <button type="submit" class="btn btn-primary btn-lg btn-block">Wijzig</button>
             </form>
         </div>
+        <!-- Huidige Gegevens. -->
         <div class="col-6">
             <h1>Uw gegevens</h1>
             <p>Naam: <?php echo $_SESSION["firstname"] . ' ' . $_SESSION["infix"] . ' ' . $_SESSION["lastname"]; ?></p>

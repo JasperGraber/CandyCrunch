@@ -14,19 +14,21 @@ if (empty($_POST["email"])) {
     $email = sanitize($_POST["email"]);
     $password = sanitize($_POST["password"]);
 
+    // Kijken of email al bestaat.
     $sql = "SELECT * FROM `customer_information` WHERE `email` = '{$email}'";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result)) {
         header("Location: ./index.php?content=message&alert=emailexists");
     } else {
-        // Password hash maken
+        // Password hash maken.
         $password_hash = password_hash($password, PASSWORD_BCRYPT);
 
-        // Database query
+        // Database query.
         $sql = "INSERT INTO `customer_information` (`customer_id`, `firstname`, `infix`, `lastname`, `email`, `password`, `address`, `zipcode`, `bmi`, `active`, `userrole`) VALUES (NULL, '{$firstname}', '{$infix}', '{$lastname}', '{$email}', '{$password_hash}', NULL, NULL, NULL, 0, 'user')";
         mysqli_query($conn, $sql);
 
+        // Registratie mail versturen.
         $id = mysqli_insert_id($conn);
         $to = $email;
         $name = $firstname . ' ' . $infix . ' ' . $lastname;

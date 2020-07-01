@@ -3,9 +3,11 @@
 session_start();
 ?>
 
+<!-- Banner. -->
 <div class="container-fluid px-0">
     <div class="banner">
         <?php
+        // Switch home link bij userrole user.
         if (isset($_SESSION["email"])) {
             switch ($_SESSION["userrole"]) {
                 case 'user':

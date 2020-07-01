@@ -17,6 +17,7 @@ include("./functions.php");
 $id = sanitize($_GET["id"]);
 $pwh = sanitize($_GET["pwh"]);
 
+// Kijken of id klopt.
 $sql = "SELECT * FROM `customer_information` WHERE `customer_id` = $id";
 $result = mysqli_query($conn, $sql);
 
