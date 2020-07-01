@@ -1,273 +1,45 @@
 <div class="container">
     <div class="row">
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/LuckyCharms.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">LuckyCharms</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/CinnamonToastCrunch.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Cinnamon Toast Crunch</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/CocoaPuffs.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Cocoa Puffs</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/ReesesPuffs.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Reeses Puffs</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        <?php
 
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Trix.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Trix</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Cheerios.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Cheerios</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Wheaties.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Wheaties</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/RiceChex.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">RiceChex</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<hr>
-</hr>
+        $connect = mysqli_connect('localhost', 'root', '', 'cart');
+        $query = 'SELECT * FROM products ORDER BY id ASC';
+        $result = mysqli_query($connect, $query);
 
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/warheads.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Warheads</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/SwedishFish.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Swedishfish</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/JollyRanchers.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Jollyranchers</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Kool-aidGummies.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Kool-aid Gummies</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+        // dit loopt door alle data uit $result
+        if ($result) :
+            if (mysqli_num_rows($result) > 0) :
+                while ($product = mysqli_fetch_assoc($result)) :
+                    // print_r($product);
 
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Nerds.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Nerds</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Redhots.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Redhots</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Mikeandike.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Mike and Ike</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Twizzlers.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Twizzlers</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
+        ?>
+                    <div class="col-3">
+                        <form method="post" action="index.php?content=cart&id=<?php echo $product["id"]; ?>">
+                            <div class="products">
+                                <img src="<?php echo $product["image"]; ?>" class="img-responsive" width="50%" />
+                                <h4 class="text-info"><?php echo $product["name"]; ?></h4>
+                                <h4>$ <?php echo $product["price"]; ?></h4>
+                                <input type="text" name="quantity" class="form-control" value="1" />
+                                <input type="hidden" name="name" value="<?php echo $product["name"]; ?>" />
+                                <input type="hidden" name="price" value="<?php echo $product["price"]; ?>" />
+                                <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-info" value="Add to cart" />
+                            </div>
+                        </form>
+                    </div>
+        <?php
+                endwhile;
+            endif;
+        endif;
+        ?>
     </div>
-</div>
-<hr>
-</hr>
 
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Ruffles.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Ruffles</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/HotCheetos.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Hot Cheetos</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Fritos.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Fritos</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Poppables.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Poppables</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/GarlicChips.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Garlic Chips</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/Goldfish.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">GoldFish</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/DoritosDinamita.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Doritos Dinamita</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="./img/PizzaPringles.jpg" alt="" style="width: 100%">
-                <div class="card-body">
-                    <h5 class="card-title">Pizza Pringles</h5>
-                    <p class="card-text">Prijs</p>
-                    <a href="#" class="btn btn-primary">Add to cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <style>
+        .products {
+            border: 1px solid #333;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+    </style>

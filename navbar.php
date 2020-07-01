@@ -45,7 +45,7 @@
     <ul class="nav navbar-nav navbar-right">
       <?php
       if (isset($_SESSION["email"])) {
-        echo '<a class="nav-link cart" href="./index.php?content=user/u-cart"></a></li>';
+        echo '<a class="nav-link cart" href="./index.php?content=cart"></a></li>';
         echo '<li class="nav-item"><a class="nav-link" href="./index.php?content=user/logout">Uitloggen</a></li>';
         echo '<a class="nav-link account" href="./index.php?content=user/account"></a>';
       } else {
