@@ -59,15 +59,15 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
     <table class="table">
         <tr>
             <th colspan="5">
-                <h3>Order Details</h3>
+                <h3>Winkelmandje</h3>
             </th>
         </tr>
         <tr>
-            <th width="40%">Product Name</th>
-            <th width="10%">Quantity</th>
-            <th width="20%">Price</th>
-            <th width="15%">Total</th>
-            <th width="5%">Action</th>
+            <th width="40%">Producten</th>
+            <th width="10%">Hoeveelheid</th>
+            <th width="20%">Prijs</th>
+            <th width="15%">Totaal</th>
+            <th width="5%">Verwijderen</th>
         </tr>
         <?php
 
@@ -85,7 +85,7 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
                 <td>$ <?php echo number_format($product['quantity'] * $product['price'], 2); ?></td>
                 <td>
                     <a href="index.php?content=cart&action=delete&id=<?php echo $product['id']; ?>">
-                        <div class="btn-danger">Remove</div>
+                        <div class="btn-danger">Verwijder</div>
                     </a>
                 </td>
             </tr>
@@ -113,4 +113,4 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
     </table>
 </div>
 
-<h5 style="text-align:center;">Terug naar de <a href="index.php?content=shop">webshop</a>.</h5>
+<h5 style="text-align:center;margin-bottom:60px;">Terug naar de <a href="index.php?content=shop">webshop</a>.</h5>
