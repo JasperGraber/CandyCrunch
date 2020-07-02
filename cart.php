@@ -51,6 +51,7 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
     $_SESSION['shopping_cart'] = array_values($_SESSION['shopping_cart']);
 }
 ?>
+
 <!-- hier wordt de table gemaakt -->
 <div style="clear:both"></div>
 <br />
@@ -105,7 +106,11 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
                 if (isset($_SESSION['shopping_cart'])) :
                     if (count($_SESSION['shopping_cart']) > 0) :
                 ?>
-                <?php endif; endif; ?>
+                <?php endif;
+                endif; ?>
             </td>
         </tr>
+    </table>
 </div>
+
+<h5 style="text-align:center;">Terug naar de <a href="index.php?content=shop">webshop</a>.</h5>
